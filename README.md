@@ -1,11 +1,11 @@
 # Converts panoptic nuScenes into SemanticKITTI-compatible format.
 
-First you have to ownload the [panoptic nuScenes](https://nuscenes.org/nuscenes) dataset: point clouds and labels.
+First you have to download the [panoptic nuScenes](https://nuscenes.org/nuscenes) dataset.
 
 Script usage: 
-
-`python3 nuscenes2kitti.py --nuscenes_dir <nuscenes_directory> --output_dir <output_directory>`
-
+```
+python3 nuscenes2kitti.py --nuscenes_dir <nuscenes_directory> --output_dir <output_directory>
+```
 options: 
 
 `--normalize_remission` set remission values to range `[0,1]`.
@@ -14,7 +14,7 @@ options:
 
 `--save_images` save frontal image for each point cloud
 
-This will create a directory for each scene in `<output_directory>` with the same structure as SemanticKITTI, containing:
+This will create a directory for each scene in `<output_directory>` with the same structure as SemanticKITTI containing:
 
 ```
 output_directory
