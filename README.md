@@ -1,6 +1,23 @@
 # Converts panoptic nuScenes into SemanticKITTI-compatible format.
 
-First you have to download the [panoptic nuScenes](https://nuscenes.org/nuscenes) dataset.
+First you have to download the  [nuScene dataset](https://nuscenes.org/nuscenes), which include the Full dataset, the nuScenes-lidarseg dataset and the nuScenes-panoptic datset. The final data folder structure will look like: 
+```sh
+Nuscene
+├── lidarseg
+├── maps
+├── panoptic
+├── samples
+├── sweeps
+├── v1.0-mini
+├── v1.0-test
+└── v1.0-trainval
+```
+> warning: the v1.0-mini, v1.0-test, v1.0-trainval must have lidarseg.json and panotic.json. For example
+```sh
+Nuscene/v1.0-mini/
+├── lidarseg.json
+└── panoptic.json
+```
 
 Script usage: 
 ```
